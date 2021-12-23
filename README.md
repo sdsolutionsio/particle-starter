@@ -1,1 +1,1 @@
-# particle-starter
+# Particle Starter Project

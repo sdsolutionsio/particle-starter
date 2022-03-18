@@ -15,6 +15,8 @@ public class DatabaseConfig extends JooqDatabaseConfiguration {
 	public SQLDialect getSQLDialect() {
 		if("postgres".equalsIgnoreCase(dbType)) {
 			return SQLDialect.POSTGRES;
+		} else if("mariadb".equalsIgnoreCase(dbType)) {
+			return SQLDialect.MARIADB;
 		}
 
 		throw new RuntimeException("Database Not Supported");
